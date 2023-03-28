@@ -29,7 +29,11 @@ const articles = data.value?.items
       >
         <img :src="article.headerImage.src" class="header-image" />
         <span>{{ dayjs(article.createdAt).format('YYYY.MM.DD') }}</span>
-        <h2 class="article-title">{{ article.title }}</h2>
+        <h2 class="article-title">
+          <NuxtLink :to="`/blog/${article.slug}`">
+            {{ article.title }}
+          </NuxtLink>
+        </h2>
         <!-- eslint-disable-next-line vue/no-v-html -->
         <div v-html="$sanitize(article.body.slice(0, 25))" />
       </FlexBox>
