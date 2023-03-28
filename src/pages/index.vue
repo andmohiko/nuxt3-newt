@@ -1,8 +1,10 @@
 <template>
-  <FlexBox>
-    <h1 class="title">たいとる</h1>
-    <p>これは段落です</p>
-  </FlexBox>
+  <NuxtLayout>
+    <FlexBox>
+      <h1 class="title">たいとる</h1>
+      <p>これは段落です</p>
+    </FlexBox>
+  </NuxtLayout>
 </template>
 
 <style lang="scss" scoped>
