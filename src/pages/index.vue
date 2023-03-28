@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout>
+  <NuxtLayout name="sp">
     <FlexBox>
       <h1 class="title">たいとる</h1>
       <p>これは段落です</p>
