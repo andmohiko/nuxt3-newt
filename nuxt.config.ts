@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'サイトのタイトル',
+      htmlAttrs: {
+        lang: 'ja',
+      },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,4 +18,16 @@ export default defineNuxtConfig({
     },
   },
   css: ['@/assets/styles/reset.css'],
+  plugins: ['@/plugins/sanitize-html'],
+  runtimeConfig: {
+    newt: {
+      spaceUid: process.env.NUXT_NEWT_SPACE_UID ?? '',
+      cdnApiToken: process.env.NUXT_NEWT_CDN_API_TOKEN ?? '',
+      appUid: process.env.NUXT_NEWT_APP_UID ?? '',
+      modelUid: process.env.NUXT_NEWT_MODEL_UID ?? '',
+    },
+  },
+  typescript: {
+    typeCheck: true,
+  },
 })
