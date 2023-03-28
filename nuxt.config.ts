@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     },
   },
   css: ['@/assets/styles/reset.css'],
-  plugins: ['@/plugins/sanitize-html'],
   runtimeConfig: {
     newt: {
       spaceUid: process.env.NUXT_NEWT_SPACE_UID ?? '',

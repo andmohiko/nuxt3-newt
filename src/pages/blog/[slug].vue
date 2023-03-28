@@ -26,7 +26,7 @@ const { data } = await useAsyncData(`articles-${slug}`, async () => {
     },
   })
 })
-const article = data.value
+const article = data.value!
 
 useHead({
   title: `ブログサイト | ${article?.title}`,
