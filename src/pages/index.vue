@@ -1,6 +1,12 @@
+<script setup>
+definePageMeta({
+  layout: 'sp',
+})
+</script>
+
 <template>
-  <NuxtLayout name="sp">
-    <FlexBox>
+  <NuxtLayout>
+    <FlexBox :gap="120">
       <h1 class="title">たいとる</h1>
       <p>これは段落です</p>
     </FlexBox>
