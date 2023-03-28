@@ -9,6 +9,7 @@ definePageMeta({
     <FlexBox :gap="120">
       <h1 class="title">たいとる</h1>
       <p>これは段落です</p>
+      <a href="/blog">ブログへ</a>
     </FlexBox>
   </NuxtLayout>
 </template>
